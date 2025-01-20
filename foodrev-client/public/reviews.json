@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "foodId": 1,
+      "userId": 101,
+      "reviewText": "Absolutely loved this pizza! The basil was so fresh.",
+      "createdAt": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "foodId": 1,
+      "userId": 102,
+      "reviewText": "Good pizza, but the crust was a bit too chewy for my taste.",
+      "createdAt": "2025-01-15T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "foodId": 2,
+      "userId": 103,
+      "reviewText": "The sushi was incredibly fresh! Highly recommend.",
+      "createdAt": "2025-01-15T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "foodId": 2,
+      "userId": 104,
+      "reviewText": "Good variety of sushi, but the rolls were a bit small for the price.",
+      "createdAt": "2025-01-15T13:00:00Z"
+    },
+    {
+      "id": 5,
+      "foodId": 3,
+      "userId": 105,
+      "reviewText": "This chicken tikka masala was spot on. Perfect blend of spices!",
+      "createdAt": "2025-01-15T14:00:00Z"
+    },
+    {
+      "id": 6,
+      "foodId": 3,
+      "userId": 106,
+      "reviewText": "Tasted okay, but it was a bit too creamy for my liking.",
+      "createdAt": "2025-01-15T15:00:00Z"
+    },
+    {
+      "id": 7,
+      "foodId": 4,
+      "userId": 107,
+      "reviewText": "The tacos were delicious and full of flavor!",
+      "createdAt": "2025-01-15T16:00:00Z"
+    },
+    {
+      "id": 8,
+      "foodId": 4,
+      "userId": 108,
+      "reviewText": "Loved the beef tacos! The cilantro and onions added a great touch.",
+      "createdAt": "2025-01-15T17:00:00Z"
+    },
+    {
+      "id": 9,
+      "foodId": 5,
+      "userId": 109,
+      "reviewText": "A decent Caesar salad, but the dressing was a bit too tangy.",
+      "createdAt": "2025-01-15T18:00:00Z"
+    },
+    {
+      "id": 10,
+      "foodId": 5,
+      "userId": 110,
+      "reviewText": "Fresh and crispy! Loved the croutons and parmesan.",
+      "createdAt": "2025-01-15T19:00:00Z"
+    },
+    {
+      "id": 11,
+      "foodId": 6,
+      "userId": 111,
+      "reviewText": "The chocolate lava cake was heavenly. A must-try!",
+      "createdAt": "2025-01-15T20:00:00Z"
+    },
+    {
+      "id": 12,
+      "foodId": 6,
+      "userId": 112,
+      "reviewText": "I found it a bit too sweet, but my kids loved it.",
+      "createdAt": "2025-01-15T21:00:00Z"
+    },
+    {
+      "id": 13,
+      "foodId": 7,
+      "userId": 101,
+      "reviewText": "The Pad Thai was excellent, full of authentic flavors.",
+      "createdAt": "2025-01-15T22:00:00Z"
+    },
+    {
+      "id": 14,
+      "foodId": 7,
+      "userId": 103,
+      "reviewText": "Not bad, but the noodles were a bit overcooked.",
+      "createdAt": "2025-01-15T23:00:00Z"
+    },
+    {
+      "id": 15,
+      "foodId": 8,
+      "userId": 101,
+      "reviewText": "The vegetable stir fry was fresh and healthy. Loved the flavors!",
+      "createdAt": "2025-01-16T00:00:00Z"
+    },
+    {
+      "id": 16,
+      "foodId": 8,
+      "userId": 103,
+      "reviewText": "Good overall, but the portion size was small.",
+      "createdAt": "2025-01-16T01:00:00Z"
+    }
+  ]
+  

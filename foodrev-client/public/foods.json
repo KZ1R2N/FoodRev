@@ -1,0 +1,74 @@
+[
+  {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "price": 12.99,
+      "location": "Italian Bistro",
+      "description": "Classic Margherita pizza topped with fresh basil, mozzarella, and tomato sauce.",
+      "ratings": 4.5,
+      "image": "https://example.com/images/margherita_pizza.jpg"
+  },
+  {
+      "id": 2,
+      "name": "Sushi Platter",
+      "price": 24.99,
+      "location": "Sushi House",
+      "description": "An assortment of fresh sushi including nigiri, sashimi, and rolls.",
+      "ratings": 4.8,
+      "image": "https://example.com/images/sushi_platter.jpg"
+  },
+  {
+      "id": 3,
+      "name": "Chicken Tikka Masala",
+      "price": 15.99,
+      "location": "Curry Corner",
+      "description": "Tender chicken pieces marinated in spices and grilled, served in a creamy tomato sauce.",
+      "ratings": 4.7,
+      "image": "https://example.com/images/chicken_tikka_masala.jpg"
+  },
+  {
+      "id": 4,
+      "name": "Beef Tacos",
+      "price": 10.99,
+      "location": "Mexican Grill",
+      "description": "Soft corn tortillas filled with seasoned beef, topped with fresh cilantro and onions.",
+      "ratings": 4.6,
+      "image": "https://example.com/images/beef_tacos.jpg"
+  },
+  {
+      "id": 5,
+      "name": "Caesar Salad",
+      "price": 9.99,
+      "location": "Salad Shack",
+      "description": "Crisp romaine lettuce, croutons, and parmesan cheese, tossed in Caesar dressing.",
+      "ratings": 4.3,
+      "image": "https://example.com/images/caesar_salad.jpg"
+  },
+  {
+      "id": 6,
+      "name": "Chocolate Lava Cake",
+      "price": 6.99,
+      "location": "Dessert Delight",
+      "description": "Rich chocolate cake with a gooey molten center, served with vanilla ice cream.",
+      "ratings": 4.9,
+      "image": "https://example.com/images/chocolate_lava_cake.jpg"
+  },
+  {
+      "id": 7,
+      "name": "Pad Thai",
+      "price": 13.99,
+      "location": "Thai Express",
+      "description": "Stir-fried rice noodles with shrimp, tofu, and vegetables, garnished with peanuts and lime.",
+      "ratings": 4.5,
+      "image": "https://example.com/images/pad_thai.jpg"
+  },
+  {
+      "id": 8,
+      "name": "Vegetable Stir Fry",
+      "price": 11.99,
+      "location": "Healthy Eats",
+      "description": "A mix of seasonal vegetables stir-fried in a light soy sauce, served with rice.",
+      "ratings": 4.4,
+      "image": "https://example.com/images/vegetable_stir_fry.jpg"
+  }
+]

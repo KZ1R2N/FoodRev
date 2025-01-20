@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91a",
+        "follower_id": 102,
+        "following_id": 101
+    },
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91b",
+        "follower_id": 101,
+        "following_id": 103
+    },
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91c",
+        "follower_id": 102,
+        "following_id": 104
+    },
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91d",
+        "follower_id": 102,
+        "following_id": 101
+    },
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91e",
+        "follower_id": 103,
+        "following_id": 101
+    },
+    {
+        "_id": "64a67b2f5c1a6e77b1c3d91f",
+        "follower_id": 104,
+        "following_id": 102
+    }
+]
