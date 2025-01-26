@@ -30,7 +30,7 @@ export default function ReviewCard({
     return (
         <div
             key={food._id}
-            className="card bg-base-100 shadow-xl mx-auto w-[95%] border-[2.5px] border-gray-500 rounded-lg mb-5"
+            className="card bg-base-100 shadow-xl mx-auto w-[70%] border-[2.5px] border-gray-500 rounded-lg mb-5"
         >
             <figure>
                 <img

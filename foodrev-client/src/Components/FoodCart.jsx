@@ -1,21 +1,28 @@
-import React from 'react'
+import React from 'react';
 
-export default function FoodCart({food}) {
+export default function FoodCart({ food, onShowDetails }) {
     return (
         <div className="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
                 <img
+                    className="h-60 w-full"
                     src={food.image}
-                    alt={food.name}/>
-                    {console.log(food.image)}
+                    alt={food.name}
+                />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">{food.ratings}</h2>
-                <p>{food.price}</p>
+                <h2 className="card-title">{food.name}</h2>
+                <p>Price: {food.price}</p>
+                <p>Ratings: {food.ratings}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Show Details</button>
+                    <button
+                        className="btn btn-primary"
+                        onClick={onShowDetails}
+                    >
+                        Show Details
+                    </button>
                 </div>
             </div>
         </div>
-    )
+    );
 }

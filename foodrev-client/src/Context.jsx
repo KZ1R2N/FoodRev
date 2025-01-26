@@ -15,6 +15,8 @@ export function ContextProvider({ children }) {
     const [loading, setLoading] = useState(true);
     const [follows, setFollows] = useState([]);
 const [userId, setUserId] = useState(101);
+
+const [userDetails, setUserDetails] = useState(null)
     // Fetch data from JSON files
     useEffect(() => {
         const fetchData = async () => {
@@ -23,7 +25,7 @@ const [userId, setUserId] = useState(101);
                 const reviewResponse = await fetch(`${baseURL}/reviews`);
                 const likeResponse = await fetch(`${baseURL}/likedislikes`);
                 const userResponse = await fetch("/users.json");
-                const followResponse = await fetch("/follows.json")
+                const followResponse = await fetch(`${baseURL}/follows`)
 
                 const foodData = await foodResponse.json();
                 const reviewData = await reviewResponse.json();
@@ -68,7 +70,9 @@ const [userId, setUserId] = useState(101);
                 follows,
                 setFollows,
                 userId,
-                setUserId
+                setUserId,
+                userDetails,
+                setUserDetails
               
             }}
         >

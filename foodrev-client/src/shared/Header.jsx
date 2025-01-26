@@ -6,10 +6,12 @@ import { useContext } from 'react'
 export default function Header() {
     const links = <><li><NavLink to='/'>Home</NavLink></li>
          <li><NavLink to='/Login'>Login</NavLink></li>
+         <li><NavLink to='/Registration'>Registration</NavLink></li>
          <li><NavLink to='/Reviews'>Reviews</NavLink></li>
          {/* <li><NavLink to='/Reviewss'>Reviewss</NavLink></li> */}
          </>
-     const {userId} = useContext(Context)
+     const {userDetails} = useContext(Context)
+    //  console.log(userDetails)
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -41,8 +43,9 @@ export default function Header() {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">{userId}</a>
+            <div className="flex navbar-end">
+               {userDetails?.displayName &&<a className="btn">{userDetails.displayName}</a>} 
+               {userDetails?.photoURL && <img className="avatar avatar-sm rounded-full h-8 ml-2" src={userDetails.photoURL} alt="" />   }                
             </div>
         </div>
     )
