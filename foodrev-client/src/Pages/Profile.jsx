@@ -129,6 +129,7 @@ export default function Profile() {
     };
 
     const handleDeleteReview = async () => {
+        console.log(reviewToDelete)
         if (!reviewToDelete) {
             console.error("No review selected for deletion.");
             return;
@@ -263,6 +264,7 @@ export default function Profile() {
                                         {loggedinuser === parseInt(userId) && (
                                             <button
                                                 onClick={() => {
+                                                    console.log(review._id)
                                                     setReviewToDelete(review._id);
                                                     setIsPopupVisible(true);
                                                 }}

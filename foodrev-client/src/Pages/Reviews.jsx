@@ -109,7 +109,7 @@ export default function Reviews() {
         if (newReviewText.trim() === "") return;
 
         const newReview = {
-            _id: reviews.length + 1, // Generate a unique ID or handle it with the database
+           
             foodId,
             reviewText: newReviewText,
             userId,
