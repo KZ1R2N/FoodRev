@@ -11,6 +11,8 @@ import FoodsPage from "./Pages/Admin/FoodsPage";
 import FoodDetails from "./Pages/FoodDetails"; 
 import Registration from "./Pages/Registration";
 import './index.css'
+import PrivateRoute from "./PrivateRoute";
+
 export default function Routepaths() {
   return (
     <Routes
@@ -22,9 +24,9 @@ export default function Routepaths() {
       <Route path="/" element={<App></App>}>
         <Route index element={<Home></Home>} /> {/* Default child route */}
         <Route path="login" element={<Login></Login>} />
-        <Route path="reviews" element={<Reviews></Reviews>} />
+        <Route path="reviews" element={<PrivateRoute><Reviews></Reviews></PrivateRoute>} />
         <Route path="profile/:userId" element={<Profile></Profile>} />
-        <Route path="food-details/:foodId" element={<FoodDetails></FoodDetails>} />
+        <Route path="food-details/:foodId" element={<PrivateRoute><FoodDetails></FoodDetails></PrivateRoute>} />
         <Route path="registration" element={<Registration></Registration>} />
 
       </Route>

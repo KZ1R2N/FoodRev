@@ -4,8 +4,10 @@ import ReviewCard from "../Components/ReviewCard.jsx";
 import UserList from "../Components/userList";
 import { AiOutlineDislike, AiOutlineLike, AiFillDislike, AiFillLike } from "react-icons/ai";
 import axiosInstance from "../shared/AxiosInstance";
+import { useNavigate } from "react-router";
 
 export default function Reviews() {
+    const navigate = useNavigate()
     const {
         userId,
         foods,
@@ -36,6 +38,10 @@ export default function Reviews() {
         likes.filter((reaction) => reaction.reviewId === reviewId && reaction.type === type).length;
 
     const handleReaction = async(reviewId, type) => {
+        if (userId === null) {
+           
+            return  navigate("/login");
+        }
         const existingReaction = likes.find(
             (reaction) => reaction.reviewId === reviewId && reaction.userId === userId
         );
@@ -106,6 +112,10 @@ export default function Reviews() {
     };
 
     const handleAddReview = async(foodId) => {
+        if (userId === null) {
+           
+            return  navigate("/login");
+        }
         if (newReviewText.trim() === "") return;
 
         const newReview = {

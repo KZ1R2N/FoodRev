@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
     AiOutlineDislike,
     AiOutlineLike,
@@ -14,6 +14,7 @@ import LikersDislikers from "../shared/likersdislikers";
 import axiosInstance from "../shared/AxiosInstance";
 
 export default function Profile() {
+    const navigate = useNavigate()
     const { userId } = useParams();
     const {
         users,
@@ -61,6 +62,10 @@ export default function Profile() {
     };
 
     const handleReaction = async (reviewId, type) => {
+        if (loggedinuser === null) {
+            
+            return navigate("/login");
+        }
         try {
             const response = await axiosInstance.post('/likedislikes', {
                 reviewId,
@@ -88,6 +93,10 @@ export default function Profile() {
     
 
     const handleFollow = async () => {
+        if (loggedinuser === null) {
+            
+            return navigate("/login");
+        }
         try {
             const response = await axiosInstance.post('/follow', {
                 followerId: loggedinuser,

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BsGoogle } from "react-icons/bs";
 import { GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword } from "firebase/auth";
 import auth from "../Firebase/firebase";
@@ -9,12 +9,17 @@ export default function Login() {
   const provider = new GoogleAuthProvider();
   const { setUserId, setUserDetails } = useContext(Context);
   const [errorMessage, setErrorMessage] = useState(""); // State to store the error message
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  const comingFrom = location?.state?.from || '/';
+  console.log(comingFrom)
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
+        
         setUserId(result.user.uid);
         setUserDetails(result.user);
+        navigate(comingFrom ? comingFrom : '/');
       })
       .catch((error) => {
         console.error("Error during Google Sign-In:", error);
@@ -28,9 +33,11 @@ export default function Login() {
 
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        
         setUserId(result.user.uid);
         setUserDetails(result.user);
         setErrorMessage(""); 
+        navigate(comingFrom);
       })
       .catch((error) => {
         setErrorMessage("Invalid email or password. Please try again."); // Set the error message
